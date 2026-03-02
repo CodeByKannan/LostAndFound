@@ -1,0 +1,29 @@
+.items-page { padding: 2rem 0 4rem; }
+.items-header { margin-bottom: 1.5rem; }
+.items-header h1 { font-size: 1.75rem; font-weight: 800; }
+.items-subtitle { color: var(--gray-500); font-size: 0.9rem; margin-top: 0.25rem; }
+
+.filters-bar { display: flex; gap: 1rem; margin-bottom: 1rem; align-items: center; flex-wrap: wrap; }
+
+.search-form { display: flex; gap: 0; flex: 1; min-width: 200px; }
+.search-input { flex: 1; padding: 0.6rem 1rem; border: 1.5px solid var(--gray-300); border-right: none; border-radius: var(--border-radius) 0 0 var(--border-radius); font-size: 0.9rem; }
+.search-input:focus { outline: none; border-color: var(--primary); }
+.search-btn { padding: 0.6rem 1rem; background: var(--primary); color: white; border: none; border-radius: 0 var(--border-radius) var(--border-radius) 0; font-size: 1rem; }
+
+.filter-buttons { display: flex; gap: 0.5rem; }
+.filter-btn { padding: 0.5rem 1rem; border: 1.5px solid var(--gray-300); border-radius: 9999px; background: white; font-size: 0.85rem; font-weight: 600; transition: var(--transition); color: var(--gray-600); }
+.filter-btn.active, .filter-btn:hover { border-color: var(--primary); color: var(--primary); background: #eff6ff; }
+.filter-btn.active-lost { border-color: #dc2626 !important; color: #dc2626 !important; background: #fee2e2 !important; }
+.filter-btn.active-found { border-color: #16a34a !important; color: #16a34a !important; background: #dcfce7 !important; }
+
+.category-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--gray-200); }
+.cat-tab { padding: 0.4rem 0.85rem; border: 1px solid var(--gray-200); border-radius: 9999px; background: white; font-size: 0.8rem; font-weight: 500; cursor: pointer; transition: var(--transition); color: var(--gray-600); }
+.cat-tab:hover, .cat-tab.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+.items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 2rem; }
+
+.pagination { display: flex; justify-content: center; align-items: center; gap: 1.5rem; margin-top: 2rem; }
+.page-btn { padding: 0.6rem 1.25rem; border: 1.5px solid var(--gray-300); border-radius: var(--border-radius); background: white; font-weight: 600; transition: var(--transition); }
+.page-btn:hover:not(:disabled) { border-color: var(--primary); color: var(--primary); }
+.page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.page-info { font-size: 0.875rem; color: var(--gray-500); }

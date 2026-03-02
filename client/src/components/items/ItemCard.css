@@ -1,0 +1,116 @@
+.item-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid var(--gray-200);
+  overflow: hidden;
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+
+.item-card:hover {
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.item-card-image {
+  position: relative;
+  height: 180px;
+  background: var(--gray-100);
+  overflow: hidden;
+}
+
+.item-card-image img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.item-card:hover .item-card-image img { transform: scale(1.05); }
+
+.item-card-placeholder {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3rem;
+  background: linear-gradient(135deg, var(--gray-100), var(--gray-200));
+}
+
+.item-type-badge {
+  position: absolute;
+  top: 0.75rem; left: 0.75rem;
+}
+
+.item-card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.item-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.item-category {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.item-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.item-description {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.item-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.item-meta-item {
+  font-size: 0.78rem;
+  color: var(--gray-500);
+}
+
+.item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--gray-100);
+  margin-top: 0.25rem;
+}
+
+.item-poster {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+}
+
+.item-views {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+}

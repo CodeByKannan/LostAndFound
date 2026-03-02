@@ -1,0 +1,5 @@
+.form-page { padding: 2.5rem 0 4rem; }
+.form-page-header { margin-bottom: 2rem; }
+.form-page-header h1 { font-size: 1.75rem; font-weight: 800; color: var(--gray-900); }
+.form-page-header p { color: var(--gray-500); margin-top: 0.4rem; }
+.form-card { background: white; border-radius: 16px; padding: 2rem; box-shadow: var(--shadow); border: 1px solid var(--gray-200); max-width: 750px; }

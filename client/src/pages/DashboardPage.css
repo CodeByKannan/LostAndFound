@@ -1,0 +1,33 @@
+.dashboard-page { padding: 2rem 0 4rem; }
+.dashboard-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; }
+.dashboard-header h1 { font-size: 1.75rem; font-weight: 800; }
+.dashboard-header p { color: var(--gray-500); margin-top: 0.25rem; }
+.post-btn { padding: 0.65rem 1.25rem; background: var(--primary); color: white; border-radius: var(--border-radius); font-weight: 700; font-size: 0.875rem; transition: var(--transition); }
+.post-btn:hover { background: var(--primary-dark); }
+
+.dash-stats { display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.dash-stat { flex: 1; min-width: 80px; background: white; border: 1px solid var(--gray-200); border-radius: 12px; padding: 1rem; text-align: center; display: flex; flex-direction: column; gap: 0.25rem; box-shadow: var(--shadow-sm); }
+.dash-stat-num { font-size: 1.75rem; font-weight: 800; color: var(--primary); }
+.dash-stat span:last-child { font-size: 0.75rem; color: var(--gray-500); text-transform: uppercase; font-weight: 600; letter-spacing: 0.05em; }
+
+.dash-tabs { display: flex; gap: 0; border-bottom: 2px solid var(--gray-200); margin-bottom: 1.5rem; }
+.dash-tab { padding: 0.65rem 1.5rem; background: none; border: none; font-size: 0.9rem; font-weight: 600; color: var(--gray-500); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: var(--transition); }
+.dash-tab.active, .dash-tab:hover { color: var(--primary); border-bottom-color: var(--primary); }
+
+.dash-table-wrap { background: white; border-radius: 12px; border: 1px solid var(--gray-200); overflow: hidden; overflow-x: auto; }
+.dash-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.dash-table th { padding: 0.85rem 1rem; text-align: left; background: var(--gray-50); font-weight: 700; color: var(--gray-600); border-bottom: 1px solid var(--gray-200); white-space: nowrap; }
+.dash-table td { padding: 0.85rem 1rem; border-bottom: 1px solid var(--gray-100); }
+.dash-table tr:last-child td { border-bottom: none; }
+.dash-table tr:hover td { background: var(--gray-50); }
+.item-link { color: var(--primary); font-weight: 600; }
+.item-link:hover { text-decoration: underline; }
+.action-cell { display: flex; gap: 0.5rem; }
+.tbl-btn { padding: 0.3rem 0.65rem; border-radius: 6px; font-size: 0.78rem; font-weight: 600; border: 1.5px solid transparent; transition: var(--transition); }
+.tbl-edit { border-color: var(--primary); color: var(--primary); background: transparent; }
+.tbl-edit:hover { background: var(--primary); color: white; }
+.tbl-delete { border-color: var(--danger); color: var(--danger); background: transparent; }
+.tbl-delete:hover { background: var(--danger); color: white; }
+
+.empty-dash { padding: 3rem; text-align: center; color: var(--gray-500); }
+.empty-dash a { display: block; margin-top: 1rem; color: var(--primary); font-weight: 600; }

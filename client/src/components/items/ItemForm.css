@@ -1,0 +1,85 @@
+.item-form { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.form-label { font-weight: 600; font-size: 0.875rem; color: var(--gray-700); }
+
+.form-input {
+  padding: 0.6rem 0.9rem;
+  border: 1.5px solid var(--gray-300);
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  background: white;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.form-textarea { resize: vertical; min-height: 100px; }
+
+.type-toggle { display: flex; gap: 0.75rem; }
+
+.type-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--border-radius);
+  background: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: var(--transition);
+  color: var(--gray-600);
+}
+
+.active-lost { border-color: #dc2626; background: #fee2e2; color: #dc2626; }
+.active-found { border-color: #16a34a; background: #dcfce7; color: #16a34a; }
+
+.form-section-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--gray-200);
+  margin-top: 0.5rem;
+}
+
+.file-input-label {
+  cursor: pointer;
+  background: var(--gray-50);
+  border-style: dashed;
+  text-align: center;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.file-input-label:hover { background: #eff6ff; border-color: var(--primary); color: var(--primary); }
+
+.image-previews { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.75rem; }
+
+.image-preview { width: 80px; height: 80px; border-radius: 8px; overflow: hidden; border: 1px solid var(--gray-200); }
+
+.image-preview img { width: 100%; height: 100%; object-fit: cover; }
+
+.btn-submit {
+  padding: 0.85rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: var(--transition);
+  margin-top: 0.5rem;
+}
+
+.btn-submit:hover:not(:disabled) { background: var(--primary-dark); }
+.btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
