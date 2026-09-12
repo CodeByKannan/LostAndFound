@@ -1,13 +1,17 @@
 # 🔍 Campus Lost & Found — MERN Stack
 
-A full-featured lost and found platform for university campuses. Post lost or found items, submit claims, manage notifications, and resolve reunions.
+A full-stack MERN application designed to digitize campus lost-and-found management.
+
+Students can report lost or found items, upload images, submit claims with proof, track claim status, and manage their listings through a centralized platform.
+
+**Tech:** React.js · Node.js · Express.js · MongoDB · JWT · Cloudinary · Tailwind CSS
 
 ## ✨ Features
 
 - **Lost & Found Listings** — Browse, filter, and search items by type, category, location, and date
 - **Image Upload** — Upload up to 4 photos via Cloudinary
 - **Claim System** — Submit claims for found items with proof; item owners can approve/reject
-- **Smart Notifications** — Get notified of new claims, claim updates, and potential matches
+- **Notifications** — Get notified about new claims and claim status updates
 - **User Dashboard** — Manage your postings, track submitted claims, read notifications
 - **Admin Panel** — View platform stats, manage user roles
 - **JWT Authentication** — Secure login/register with protected routes
@@ -121,6 +125,20 @@ campus-lost-found/
 ├── .gitignore
 └── README.md
 ```
+## 🏗️ Architecture
+
+```text
+React.js + Tailwind CSS
+          │
+          ▼
+     Express.js API
+          │
+     ┌────┴────┐
+     ▼         ▼
+ MongoDB   Cloudinary
+     │
+     ▼
+ JWT Authentication
 
 ## 🌐 API Endpoints
 
